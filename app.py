@@ -31,8 +31,8 @@ from db_config import character_table, chat_history, user_table, tts_voices_tabl
 redis_client = redis.Redis(host='localhost', port=6379, db=0)
 socket_manager = ConnectionManager()
 
-PLAYHT_ACCESS_KEY = "1kQQPnypwRRaJskfyRj5QxpdztP2"
-PLAYHT_SECRET_KEY = "bb8fe6b739264432a61af3346c1603f5"
+PLAYHT_ACCESS_KEY = <PLAYHTACCESSKEY>
+PLAYHT_SECRET_KEY = <PLAYHTSECRETKEY>
 
 PLAYHT_AUDIO_STATUS_URL = "https://play.ht/api/v1/articleStatus?transcriptionId="
 PLAYHT_CONVERT_TTS = "https://play.ht/api/v1/convert"
@@ -42,10 +42,10 @@ sd_model = "majicmixv6"
 OUTPUT_BASE_DIR = "/home/ubuntu/"
 RVC_FOLDER = "Retrieval-based-Voice-Conversion-WebUI/"
 
-aws_access_key = "AKIA3XH6443UJS5O3LNJ"
-aws_secret_key = "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"
-aws_region = "ap-northeast-1"
-aws_bucket_name = "onlyfantasy"
+aws_access_key = <AWSACCESSKEY>
+aws_secret_key = <AWSACCESSSECRET>
+aws_region = <BUCKERREGION>
+aws_bucket_name = <BUCKETNAME>
 
 app = FastAPI()
 app.mount('/media/characters', StaticFiles(directory='characters'), name='characters')
